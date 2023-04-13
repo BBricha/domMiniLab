@@ -1,10 +1,14 @@
 
-let h1 = document.querySelector('h1')
-h1.textContent = 'some text'
+let myHeading = document.getElementById("my-heading");
+let hideButton = document.getElementById("hide-button");
+let unhideButton = document.getElementById("unhide-button");
 
-let hideButton = document.getElementById('hide-button')
-hideButton.addEventListener('click', () => {
-    let h1 = document.querySelector('h1')
-    h1.style.display = 'none'
-}
-)
+myHeading.textContent = "Hello, my name is Bader!";
+
+hideButton.addEventListener("click", () => {
+	myHeading.style.display = "none";
+});
+
+unhideButton.addEventListener("click", () => {
+	myHeading.style.display = "block";
+});
